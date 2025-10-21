@@ -33,8 +33,8 @@ jobs:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Bandit Security Scan
-        uses: shundor/bandit-action@v1
+      - name: Bandit Scan
+        uses: shundor/python-bandit-scan@v1.0
         with:
           path: "."
           level: high 
